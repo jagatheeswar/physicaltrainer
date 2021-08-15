@@ -18,7 +18,7 @@ const Excercise = ()=>{
         <div className="excercisecontainer">
             <h1 className="m-5">Add Exercises</h1>
                 
-<select class="" name="selectexcercise" style={{background:'white'}} id="excercises" onClick = {handleexcercise} >
+<select class="" name="selectexcercise" style={{background:'white'}} id="excercises" onChange = {handleexcercise} >
   
 <option id="option1" value="Select Excercises">Select Excercise</option>
   <option id="option1" value="Reverse Lunge">Reverse Lunge</option>
