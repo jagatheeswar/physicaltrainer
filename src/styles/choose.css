@@ -1,0 +1,124 @@
+div.choosecontainer{
+    margin-top: 30px;
+    
+    padding: 2%;
+    margin: 2%;
+    background-color: rgb(255, 255, 255);
+    
+        border-radius: 20px;
+}
+div.togglediv{
+    background-color: white;
+    border-radius: 20px;
+    margin: 2%;
+    margin-top: 3%;
+}
+img{
+    border-radius: 10px;
+}
+
+
+td#tdone{
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+}
+td#tdtwo p,td#tdtwo h1{
+    
+    margin-left: 10px;
+ 
+}
+#tdthree{
+    background-color: rgb(255, 255, 255) !important;
+    color: black;
+    text-align: end;
+    
+}
+.excercisecontrol{
+    text-align: start;
+ 
+
+}
+#tdthree p{
+    margin-right: 30px;
+}
+#tdthree div#clearexcercise{
+    
+    color: black;
+    display: flex;
+    float: right;
+    margin-right: 40px;
+    align-items: center;
+    
+}
+span.editbtn{
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.editbtn{
+    margin-right: 30px
+}
+p#editicon{
+    background-color: rgb(255, 255, 255);
+    text-align: end;
+}
+div.flexcontainer{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+}
+div.image{
+    flex: 1;
+}
+div.number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+flex:1;
+font-weight: bold;
+}
+div.number p span{
+    
+    text-align: start;
+}
+div.excercisecontrol{
+    flex:1
+}
+@media only screen and (max-width: 990px) {
+    div.flexcontainer{
+        flex-direction: column;
+    }
+    div.togglediv{
+        margin-top: 20%;
+    }
+        
+#tdthree div#clearexcercise{
+    
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+    margin-right: 40px;
+    
+}
+        }
+        .block{
+            display: block;
+          }
+          .hideblock{
+            display: none;
+          }
+          .hideblockred{
+            display: none;
+            background-color: red;
+          }
+          .blockred{
+            display: block;
+            background-color: red;
+          }
+          

@@ -1,0 +1,55 @@
+.addinput{
+    width: 80px;
+    border-radius: 8px;
+    margin: 10px;
+    font-weight: bold;
+    height: 40px;
+    padding-left: 1%;
+    
+    text-align: center;
+}
+#singleadd{
+    display: flex;
+    padding: 2%;
+  
+
+}
+.adddiv{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    
+}
+#addcontrols{
+    
+    display: flex;
+    font-size: larger;
+}
+#editbtn{
+    border-radius: 8px;
+    margin-left: 20px;
+    height: 40px;
+}
+
+@media only screen and (max-width: 690px) {
+    
+    .adddiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+#singleadd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+    
+    padding: 5%;
+}
+        
+        }

@@ -1,0 +1,9 @@
+div#setlistdiv{
+    background-color: gainsboro ;
+}
+.block{
+    display: block;
+  }
+  .hideblock{
+    display: none;
+  }
