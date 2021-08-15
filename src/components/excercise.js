@@ -18,7 +18,7 @@ const Excercise = ()=>{
         <div className="excercisecontainer">
             <h1 className="m-5">Add Exercises</h1>
                 
-<select class="" name="selectexcercise" id="excercises" onClick = {handleexcercise} >
+<select class="" name="selectexcercise" style={{background:'white'}} id="excercises" onClick = {handleexcercise} >
   
 <option id="option1" value="Select Excercises">Select Excercise</option>
   <option id="option1" value="Reverse Lunge">Reverse Lunge</option>
@@ -28,7 +28,7 @@ const Excercise = ()=>{
  
 </select>
 <br></br> <br></br><br></br>
-<select class="" name="selecttype" id="excercises" onChange = {(event)=>setType(event.target.value)}>
+<select class="" name="selecttype" id="excercises" style={{background:"white"}} onChange = {(event)=>setType(event.target.value)}>
   <option id="option1" value="Reps/Rest/Weight ">Weight/Reps/Rest/Sets</option>
   
 </select>
