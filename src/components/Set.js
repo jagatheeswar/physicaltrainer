@@ -7,6 +7,9 @@ function Set({sets,removeSet,updateSet}) {
     const [edit,setEdit] = useState({
         id:null,
         value:'',
+        valuetwo:'',
+        valuethree:'',
+        
         weight:'',
         reps:'',
         rest:'',
@@ -20,6 +23,9 @@ function Set({sets,removeSet,updateSet}) {
             {
                 id:null,
                 value:'',
+                valuetwo:'',
+                valuethree:'',
+                
                 isEdit:true
         
             }
@@ -27,7 +33,7 @@ function Set({sets,removeSet,updateSet}) {
     }
     if(edit.id){
         
-        return <Setform edit={edit} value={edit.value} status={true} onSubmit = {submitUpdate} />
+        return <Setform edit={edit} value={edit.value} valuetwo={edit.valuetwo} valuethree={edit.valuethree} status={true} onSubmit = {submitUpdate} />
     }
     return sets.map((set,index)=>(
 
@@ -51,7 +57,7 @@ function Set({sets,removeSet,updateSet}) {
                 <p>Rest</p>
             <input type="number" value={set.rest} placeholder="rest" className="addinput" id="addrestinput" />
             </div>
-            <button id="editbtn" className="btn btn-primary mr-5 mt-5" onClick={()=>setEdit({id:set.id,value:set.weight})}>edit</button>  
+            <button id="editbtn" className="btn btn-primary mr-5 mt-5" onClick={()=>setEdit({id:set.id,value:set.weight,valuetwo:set.reps,valuethree:set.rest})}>edit</button>  
                 
             </div>
             

@@ -26,7 +26,7 @@ props.onSubmit({
 }
     return (
         <form className="setform" onSubmit={handleSubmit}>
-            <input type="number" placeholder="add value" min="0" value={weight} name="text" className="setinput" onChange={handleChangeweight} />
+            <input type="number" placeholder="add value"  min="0" value={weight} name="text" className="setinput" onChange={handleChangeweight} />
             <input type="number" placeholder="add value" min="0" value={reps} name="text" className="setinput" onChange={handleChangereps} />
             <input type="number" placeholder="add alue" min="0" value={rest} name="text" className="setinput" onChange={handleChangerest} />
                 

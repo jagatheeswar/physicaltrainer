@@ -9,9 +9,16 @@ function Setform(props,{status,excercise}) {
     const [reps,setReps] = useState(0)
     const [rest,setRest] = useState(0)
     const [editweight,setEditweight] = useState(props.value)
-   
+    const [editreps,setEditreps] = useState(props.valuetwo)
+    const [editrest,setEditrest] = useState(props.valuethree)
     const handleChangeeditweight = (e) =>{
         setEditweight(e.target.value);   
+    }
+    const handleChangeeditreps = (e) =>{
+        setEditreps(e.target.value);   
+    }
+    const handleChangeeditrest = (e) =>{
+        setEditrest(e.target.value);   
     }
     const handleChangereps = (e) =>{
         setReps(e.target.value);
@@ -21,6 +28,10 @@ function Setform(props,{status,excercise}) {
     }
     if(editweight==undefined)
     setEditweight(0)
+    if(editreps==undefined)
+    setEditreps(0)
+    if(editrest==undefined)
+    setEditrest(0)
 const handleSubmit = (event) =>{
 
     event.preventDefault();
@@ -34,8 +45,8 @@ const handleSubmit = (event) =>{
 props.onSubmit({
     id: Math.floor(Math.random()*10000),
     weight:editweight,
-    reps:reps,
-    rest:rest
+    reps:editreps,
+    rest:editrest
 })
 
 }
@@ -61,12 +72,12 @@ var statuss = false
 
             <div className="editdiv">       
             <p>edit Reps</p>
-            <input id="editinput" min="0" type="number" placeholder="add value" value={reps} name="text" className="setinput" onChange={handleChangereps} />
+            <input id="editinput" min="0" type="number" placeholder="add value" value={editreps} name="text" className="setinput" onChange={handleChangeeditreps} />
             </div>
 
             <div className="editdiv">
             <p>Edit Rest</p>
-            <input id="editinput" min="0" type="number" placeholder="add alue" value={rest} name="text" className="setinput" onChange={handleChangerest} />
+            <input id="editinput" min="0" type="number" placeholder="add alue" value={editrest} name="text" className="setinput" onChange={handleChangeeditrest} />
             </div>
             </div>   
 : null }
