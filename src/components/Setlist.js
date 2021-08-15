@@ -5,7 +5,7 @@ import Choose from './choose';
 function Setlist({excercise,type,setExcercise,image,setImage}) {
     const[sets, setSets] = useState([])
     const addset = set=>{
-    const newSets = [set,...sets]
+    const newSets = [...sets,sets]
     setSets(newSets)
     
     }
