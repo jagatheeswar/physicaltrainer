@@ -69,9 +69,9 @@ const Choose = ({excercise,type,setExcercise,image,setImage})=>{
       </div>
       <div className="number">
       <h1 style={{textAlign:'start'}}>{excercise}</h1>
-      <p className="" id="">Weight:&nbsp; <span><Weightloop sets={sets} /> </span></p>
-    <p className="" id=""> Reps: &nbsp;&nbsp;&nbsp; <span><Repsloop sets={sets} /> </span></p>
-    <p id="" className="" id="">Rest: &nbsp;&nbsp;&nbsp;&nbsp;  <span><Restloop sets={sets} /></span></p>
+      <p className="" id="">Weight:&nbsp; <span><Weightloop sets={newset} /> </span></p>
+    <p className="" id=""> Reps: &nbsp;&nbsp;&nbsp; <span><Repsloop sets={newset} /> </span></p>
+    <p id="" className="" id="">Rest: &nbsp;&nbsp;&nbsp;&nbsp;  <span><Restloop sets={newset} /></span></p>
     
       </div>
       <div className="excercisecontrol">
