@@ -17,7 +17,7 @@ const Choose = ({excercise,type,setExcercise,image,setImage})=>{
         const[isSet,setIsset] = useState(false)
         
         const addset = set=>{
-        const newSets = [...sets,set]
+        const newSets = [set,...sets]
         setSets(newSets)
       
         if(sets.length+1 >0)
